@@ -1,0 +1,511 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: 'Roboto';
+}
+
+/* Nav */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 20px;
+}
+
+header ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+
+header li {
+    margin-right: 40px;
+}
+
+header ul li a{
+    font-weight: 520;
+    color: #1616A1;
+    text-decoration: none;
+    white-space: nowrap;
+    letter-spacing: 2px;
+}
+
+header ul li a:hover{
+    border-bottom: 1px solid #1616A1;
+}
+
+.link-input {
+    display: flex;
+    justify-content: space-between;
+}
+
+.group-in {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.group-in input{
+    border: none;
+}
+
+.group-in input::placeholder {
+    font-weight: 500;
+    color: #6b6b6b;
+}
+
+.group-in div{
+    display: flex;
+    flex-direction: row-reverse;
+    border: 1px solid #acaaaadc;
+    padding: 7px 8px;
+    border-radius: 6px;
+}
+
+/* Footer */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(
+        to bottom,
+        #0009E3 0%,
+        #1B21A7 34%,
+        #01032B 100%
+    );
+    padding: 20px;
+    color: white;
+    display: flex;
+    text-align: center;
+    padding: 5% 0px;
+}
+
+footer h1{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.footer-opcoes {
+    margin-bottom: 27px;
+    margin-top: 27px;
+
+}
+
+.footer-opcoes a{
+    margin-right: 15px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    color: white;
+}
+
+.redes-sociais-footer img{
+    width: 50px;
+    height: 50px;
+}
+
+.redes-sociais-footer a {
+    margin-right: 20px;
+}
+
+
+
+/* Home */
+
+.home section{
+    padding: 3% 10%;
+    border-top: 1px solid #00000014;
+}
+
+
+
+/* Header */
+
+.header-tittle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(90deg, #0009E0 0%, #000588 60%, #00057A 100%);
+}
+
+.text-header h1{
+    font-weight: bold;
+    font-size: 40px;
+    color: white;
+}
+
+.text-header p{
+    margin: 20px 0px 43px 0px;
+    font-size: 16px;
+    color: white;
+}
+
+.text-header a {
+    font-weight: 600;
+    padding: 16px 67px;
+    text-decoration: none;
+    font-size: 16px;
+    color: #1616A1;
+    background: white;
+    border-radius: 8px;
+}
+
+.header-tittle img{
+    width: 36%; 
+}
+
+
+/* Ativado */
+
+.active{
+    border-bottom: 1px solid #1616A1;
+}
+
+/* Games */
+
+.games-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.games-section img{
+    width: 40%;
+}
+
+.text-game h1{
+    font-size: 40px;
+    font-weight: bold;
+    background: linear-gradient(90deg, #1616A1 0%, #11117E 59%, #08083B 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.text-game p{
+    font-size: 16px;
+    margin: 24px 0px 90px 0px;
+}
+
+.button-1 {
+    border: 1px solid #00057A;
+    color: #00057A;
+    text-decoration: none;
+    padding: 16px 67px;
+    border-radius: 8px;
+    margin-right: 12px;
+}
+
+.button-2 {
+    text-decoration: none;
+    color: white;
+    background-color: #00057A;
+    padding: 16px 67px;
+    border-radius: 8px;
+}
+
+/* Maps */
+
+.google-maps-corridas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Corridas */
+
+.corridas-proximas {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.corridas-proximas h1 {
+    font-size: 40px;
+    font-weight: bold;
+    background: linear-gradient(90deg, #1616A1 0%, #11117E 59%, #08083B 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Mini Card */
+
+.pop-up-corrida {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-racing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.pop-up-corrida img {
+    padding: 15px;
+    background-color: #00000014;
+    width: 80%;
+    margin-bottom: 20px;
+    border-radius: 32px;
+}
+
+.text-racing h5{
+    color: #08083B;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.text-racing p{
+    font-size: 16px;
+    color: #00000082;
+}
+
+.corridas-data {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(264px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    text-align: center;
+    width: 54%;
+}
+
+/* Noticias */
+
+.news-home {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.news-home h1 {
+    font-size: 40px;
+    font-weight: bold;
+    background: linear-gradient(90deg, #1616A1 0%, #11117E 59%, #08083B 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 60px;
+}
+
+.div-card-news{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.card-full {
+    padding: 16px;
+    width: 31%;
+    border: 1px solid #00000021;
+    border-radius: 6px;
+    display: flex;
+
+}
+
+.card-full img{
+    width: 34%;
+}
+
+.card-text {
+    margin-left: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+
+.card-text h4{
+    font-size: 20px;
+    color: #08083B;
+    font-weight: bold;
+
+}
+
+.card-text p{
+    margin: 8px 0px;
+    font-size: 16px;
+
+}
+
+.card-text div{
+    display: flex;
+    align-items: center;
+}
+
+.card-text div p{
+    font-weight: bold;
+    margin-left: 8px;
+}
+
+/* Mobile */
+
+.mobile-menu {
+    display: none;
+    cursor: pointer;
+}
+
+.mobile-menu div{
+    width: 32px;
+    height: 2px;
+    background: #000588;
+    margin: 8px;
+}
+
+@media (max-width: 1216px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .link-input {
+        position: absolute;
+        top: 7vh;
+        right: 0;
+        width: 100vw;
+        height: 52vh;
+        background-color: rgb(255, 255, 255);
+        border: 1px solid black;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        border-top: 0px;
+        
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .disable {
+        display: none;
+    }
+
+    .activate-mobile {
+        transform: translateX(0);
+    }
+
+    .active{
+        border-bottom: 1px solid #1616A1;
+    }
+
+    .link-input li{
+        margin: 0px;
+    }
+
+    .mobile-menu {
+        display: block;
+    }
+
+    header {
+        align-items: center;
+        padding-bottom: 6px;
+    }
+
+    .slider {
+        display: none;
+    }
+
+    .group-in {
+        display: none;
+    }
+
+    .header-tittle img{
+        display: none;
+    }
+
+    .header-tittle {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .text-header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .div-card-news {
+        flex-direction: column;
+    }
+
+    .games-section img {
+        display: none;
+    }
+
+    .card-full {
+        width: 79%;
+    }
+
+    .games-section {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .text-game {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .buttons-game {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+    }
+
+    .corridas-proximas {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .corridas-proximas h1{
+        white-space: nowrap;;
+        margin-bottom: 50px;
+    }
+
+    .google-maps-corridas img{
+        width: 90vw;
+    }
+}
+
+@media (max-width: 525px){
+    .home section {
+        padding: 11% 5%;
+    }
+
+    .card-full {
+        width: 90%;
+    }
+
+    .text-header h1 {
+        text-align: center;
+    }
+
+    .text-header p {
+        text-align: center;
+    }
+
+    .text-game h1 {
+        text-align: center;
+    }
+
+    .text-game p {
+        text-align: center;
+    }
+
+    .buttons-game {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .button-1 {
+        margin-right: 0;
+    }
+
+}
